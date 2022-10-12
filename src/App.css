@@ -1,38 +1,84 @@
-.App {
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  font-weight: 200;
+  background-image: url("/src/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: #042440;
+  color: #BFB4AA;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.container {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  background-image: url('/src/searchico.png');
+  background-repeat: no-repeat;
+  background-position: 2%;
+  background-size: 10%;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 5px;
+  height: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: #5C6373;
+  height: 40px;
+  margin: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tittles th {
+  text-align: center;
+  background-color: #BFB4AA;
+  color: #260F01;
+  font-weight: bold;
+  border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+tbody,
+td {
+  background-color: #F2C791;
+  margin-top: 30px;
+  color: #260F01;
+  text-align: center;
+  border: 1px solid black;
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
+img {
+  position: absolute;
+  right: -2;
+  top: 0;
+  width: 1200px;
+  opacity: 0.1;
+  z-index: -1;
+  animation: rotation 160s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
