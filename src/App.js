@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <div className='container'> 
-             <img src={star} />
+             <img className= "star" src={star} />
         <Geocoding />
       </div>
     </> 
